@@ -1,4 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import Logo from '../../images/logo.png'
+import HomeBg from '../../images/home-bg.png'
+
+
 
 import './Home.css'
 
@@ -193,50 +199,60 @@ function Home() {
 
   return (
     <div>
-        <div className="header-wrapper demo-style">
+        <div className="header-wrapper demo-style p-4">
             <div className="container max-container">
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6"><a href="/" className="logo"><i className="feather-zap text-success display2-size me-3 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">Rivall. </span> </a></div>
+                    <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6">
+                        <a href="/" className="logo">
+                            <img src={Logo} alt={``}/>
+                        </a>
+                    </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 d-none d-lg-block">
+                        {/*                         
                         <ul className="list-inline text-center mb-0 mt-2 pt-1">
                             <li className="list-inline-item pe-4 ps-4"><a className="scroll-tiger" href="#feature">Features</a></li>
                             <li className="list-inline-item pe-4 ps-4"><a className="scroll-tiger" href="#demo">Demo</a></li>
                             <li className="list-inline-item pe-4 ps-4"><a className="scroll-tiger" href="#contact">Contact</a></li>
-                        </ul>
-
+                        </ul> */}
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6 text-right">
-                        <a href="/" className="btn btn-lg btn-primary text-uppercase">Buy Now</a>
+                    <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6 text-right flex gap-2">
+                        <Link to="/login" className="btn btn-lg border-2 border-[#fff] text-uppercase text-white">Login</Link>
+                        <Link to="/register" className="btn btn-lg btn-primary text-uppercase">Register</Link>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div className="banner-wrapper vh-100 bscover demo-style" 
-        style={{backgroundImage: `url("assets/images/demo/banner-bg-1.png")`}}>
+        <div className="banner-wrapper p-4 vh-100 bscover demo-style flex">
             <div className="banner-content">
                 <div className="container max-container">
                     <div className="row">
-                        <div className="col-lg-5 col-md-6 col-sm-8">
 
-                            <h2 className="title-text mb-5 mt-5"><b>Set up your <span>Social</span> website with Sociala.</b></h2>
-                            <h4 className="d-inline-block">40 <span>Demo <br /> Websites</span></h4>
-                            <h4 className="d-inline-block">12 <span>Custom <br /> Widgets</span></h4>
-                            <h4 className="d-inline-block">54 <span>Awesome <br /> Components</span></h4>
-                            <h4 className="d-inline-block">18 <span>Others <br />Inner Pages</span></h4>
+                        <div className="col-lg-5 col-md-6 col-sm-8 py-4">
+
+                            <h2 className="title-text mb-5 mt-5"><b>Set up your <span>Social</span> website with Rivall.</b></h2>
+                            <h4 className="d-inline-block">40 <span>Great <br /> Music</span></h4>
+                            <h4 className="d-inline-block">12 <span>Awesome <br /> Store</span></h4>
+                            <h4 className="d-inline-block">54 <span>Awesome <br /> Products</span></h4>
+                            <h4 className="d-inline-block">18 <span>Others <br />Groups</span></h4>
                             <div className="clearfix"></div>
-                            <a href="#demo" className="btn btn-lg btn-primary mr-4 text-uppercase mt-5">See DEMOs</a>
-
-
+                            <Link to="/dashboard" className="btn btn-lg btn-primary mr-4 text-uppercase mt-5">Get Start</Link>
                             <div className="icon-scroll pos-bottom-center icon-white"></div>
                         </div>
-                        
+
+                        <div className="col-lg-7 col-md-6 col-sm-4 text-right">
+                            <div className='right flex justify-end px-[100px] py-[100px]'>
+                                <img src={HomeBg} alt="" className='h-[300px]' />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <div className="section pb100 pt50 demo-style" id="feature">
+        {/* <div className="section pb100 pt50 demo-style" id="feature">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
@@ -283,6 +299,7 @@ function Home() {
                     <div className="col-sm-12 mt-5"></div>
                     
                     {newDemoList.map((value:any, index:any) => (
+
                         // Start Single Demo 
                         <div key={index} className="col-lg-4 col-md-6 demo-item">
                             <a href={`/${value.url} `}>
@@ -308,6 +325,7 @@ function Home() {
                 </div>
             </div>
         </div>
+         */}
     </div>
   )
 }
