@@ -120,7 +120,7 @@
 }
 
 .theme-dark {
-  /* background-color: #1a2236; */
+  background-color: #1a2236;
 }
 
 .theme-dark .app-content {
@@ -1474,7 +1474,7 @@
 }
 
 .theme-dark {
-  background-color: #132977;
+  background-color: #1a2236;
 }
 
 .theme-dark .middle-sidebar-header,
@@ -1557,7 +1557,7 @@
   background-color: #1a2236;
 }
 
-.theme-dark .form-group.bg-white {
+.theme-dark .form-group.bg_white {
   border: 0 !important;
   background-color: #1a2236 !important;
 }
@@ -9893,8 +9893,8 @@ fieldset:disabled .btn {
   background-color: #fff !important;
 }
 
-.bg-white {
-  background-color: #fff !important;
+.bg_white {
+  /* background-color: #fff !important; */
 }
 
 .bg-transparent {
@@ -15996,14 +15996,14 @@ body:not(.theme-full) .main-content .middle-sidebar-bottom.header-padding {
   margin-bottom: 10px;
 }
 
-.timer.bg-white .time-count {
+.timer.bg_white .time-count {
   max-width: 25%;
   width: 25%;
   margin: 0;
   padding: 10px;
 }
 
-.timer.bg-white .time-count .text-time {
+.timer.bg_white .time-count .text-time {
   font-size: 30px;
   font-weight: 700;
   color: #000;
@@ -16011,7 +16011,7 @@ body:not(.theme-full) .main-content .middle-sidebar-bottom.header-padding {
   padding-bottom: 0 !important;
 }
 
-.timer.bg-white .time-count .text-day {
+.timer.bg_white .time-count .text-day {
   text-align: center;
   margin-left: 0;
   font-size: 14px;

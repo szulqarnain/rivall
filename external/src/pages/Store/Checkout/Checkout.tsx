@@ -14,7 +14,7 @@ function Checkout() {
     <Rightchat />
 
 
-    <div className="main-content right-chat-active bg-white">
+    <div className="main-content right-chat-active bg_white">
         <div className="middle-sidebar-bottom">
             <div className="middle-sidebar-left pe-0" >
                 <div className="row">

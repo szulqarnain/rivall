@@ -320,7 +320,7 @@ function Home() {
                     <div className="col-lg-6 text-center">
                         <h2 className="title-text2 text-white mt-4"><b>Beautiful designs to get you started</b></h2>
                         <p className="text-white ml-5 mr-5">Create a really awesome website, choose the version that will suit your requirements in a best way.</p>
-                        <div className="col-sm-12 text-center mt-5"><a href="/" className="btn-lg btn bg-white">PURCHASE NOW</a></div>
+                        <div className="col-sm-12 text-center mt-5"><a href="/" className="btn-lg btn bg_white">PURCHASE NOW</a></div>
                     </div>
                 </div>
             </div>

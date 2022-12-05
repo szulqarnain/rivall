@@ -9,7 +9,7 @@ class Leftnav extends Component {
             <div className="navigation scroll-bar">
                 <div className="container ps-0 pe-0">
                     <div className="nav-content">
-                        <div className="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2 mt-2">
+                        <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2 mt-2">
                             <div className="nav-caption fw-600 font-xssss text-grey-500"><span>New </span>Feeds</div>
                             <ul className="mb-1 top-content">
                                 <li className="logo d-none d-xl-block d-lg-block"></li>
@@ -21,7 +21,7 @@ class Leftnav extends Component {
                             </ul>
                         </div>
 
-                        <div className="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2">
+                        <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2">
                             <div className="nav-caption fw-600 font-xssss text-grey-500"><span>More </span>Pages</div>
                             <ul className="mb-3">
                                 <li><Link to="/defaultemailbox" className="nav-content-bttn open-font"><i className="font-xl text-current feather-inbox me-3"></i><span>Music</span><span className="circle-count bg-warning mt-1">584</span></Link></li>
@@ -31,7 +31,7 @@ class Leftnav extends Component {
                             </ul>
                         </div>
 
-                        <div className="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1">
+                        <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1">
                             <div className="nav-caption fw-600 font-xssss text-grey-500"><span></span> Account</div>
                             <ul className="mb-1">
                                 <li className="logo d-none d-xl-block d-lg-block"></li>

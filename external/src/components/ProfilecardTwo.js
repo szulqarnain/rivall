@@ -8,7 +8,7 @@ class ProfilecardTwo extends Component {
                 style={{backgroundImage: `url("https://via.placeholder.com/1200x450.png")`}}></div>
                 <div className="card-body d-block pt-4 text-center position-relative">
 
-                    <figure className="avatar mt--6 position-relative w75 z-index-1 w100 z-index-1 ms-auto me-auto"><img src="assets/images/user.png" alt="avater" className="p-1 bg-white rounded-xl w-100" /></figure>
+                    <figure className="avatar mt--6 position-relative w75 z-index-1 w100 z-index-1 ms-auto me-auto"><img src="assets/images/user.png" alt="avater" className="p-1 bg_white rounded-xl w-100" /></figure>
 
                     <h4 className="font-xs ls-1 fw-700 text-grey-900">Surfiya Zakir <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500">@surfiyazakir22</span></h4>
                     <div className="d-flex align-items-center pt-0 position-absolute left-15 top-10 mt-4 ms-2">

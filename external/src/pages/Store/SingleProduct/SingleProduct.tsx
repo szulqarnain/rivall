@@ -6,6 +6,7 @@ import Appfooter from '../../../components/Appfooter';
 import Popupchat from '../../../components/Popupchat';
 
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function SingleProduct() {
 
@@ -51,15 +52,15 @@ function SingleProduct() {
                 <div className="middle-sidebar-left pe-0">
                     <div className="row">
                         <div className="col-lg-1 p-0 d-none d-lg-block">
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg-white p-3" />
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg-white p-3" />
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg-white p-3" />
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg-white p-3" />
+                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
                         </div>
                         <div className="col-lg-5 mb-4 shop-slider">
                             <Slider {...hotelsettings}>
                                 {slideList.map((value , index) => (
-                                <div key={index} className="pt-lg--10 pb-lg--10 bg-white rounded-3">
+                                <div key={index} className="pt-lg--10 pb-lg--10 bg_white rounded-3">
                                     <img src={`assets/images/${value.imageUrl}`} alt="avater" className="rounded-3 img-fluid" />
                                 </div>
                                 ))}
@@ -81,7 +82,7 @@ function SingleProduct() {
                             <p className="font-xsss fw-400 text-grey-500 lh-30 pe-5 mt-3 me-5">ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.</p>
 
                             <h6 className="display2-size fw-700 text-current ls-2 mb-2"><span className="font-xl">$</span>449 <span className="font-xs text-grey-500" style={{textDecoration: `line-through`}}>$699</span></h6>
-                            <div className="timer bg-white mt-2 mb-0 w350 rounded-3"><div className="time-count"><span className="text-time">03</span> <span className="text-day">Day</span></div> <div className="time-count"><span className="text-time">03</span> <span className="text-day">Hours</span> </div> <div className="time-count"><span className="text-time">55</span> <span className="text-day">Min</span> </div> <div className="time-count"><span className="text-time">48</span> <span className="text-day">Sec</span> </div> </div>
+                            <div className="timer bg_white mt-2 mb-0 w350 rounded-3"><div className="time-count"><span className="text-time">03</span> <span className="text-day">Day</span></div> <div className="time-count"><span className="text-time">03</span> <span className="text-day">Hours</span> </div> <div className="time-count"><span className="text-time">55</span> <span className="text-day">Min</span> </div> <div className="time-count"><span className="text-time">48</span> <span className="text-day">Sec</span> </div> </div>
                             <div className="clearfix"></div>
                             <form action="#" className="form--action mt-4 mb-3">
                                 <div className="product-action flex-row align-items-center">
@@ -90,8 +91,10 @@ function SingleProduct() {
                                         <div className="dec qtybutton">-</div>
                                         <div className="inc qtybutton">+</div>
                                     </div>
-                                    
-                                    <a href="/defaulthoteldetails" className="add-to-cart bg-dark text-white fw-700 ps-lg-5 pe-lg-5 text-uppercase font-xssss float-left border-dark border rounded-3 border-size-md d-inline-block mt-0 p-3 text-center ls-3">Add to cart</a>
+                                   
+                                    <Link to="/cart" className="add-to-cart bg-dark text-white fw-700 ps-lg-5 pe-lg-5 text-uppercase font-xssss float-left border-dark border rounded-3 border-size-md d-inline-block mt-0 p-3 text-center ls-3">
+                                        Add to cart
+                                    </Link>
                                     <a href="/defaulthoteldetails" className="btn-round-xl alert-dark text-white d-inline-block mt-0 ms-4 float-left"><i className="ti-heart font-sm"></i></a>
                                 </div>  
                             </form>

@@ -15,17 +15,17 @@ function Login() {
 
                 <button className="nav-menu me-0 ms-auto"></button>
 
-                <a href="/login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
-                <a href="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</a>
+                <Link to="/login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</Link>
+                <Link to="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</Link>
             </div>
         </div>
         <div className="row">
             <div className="col-xl-5 d-none d-xl-block p-0 vh-100 bg-image-cover bg-no-repeat"
-            style={{backgroundImage: `url("https://via.placeholder.com/800x950.png")`}}></div>
-                <div className="col-xl-7 vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
+            style={{backgroundImage: `url("./assets/images/login-bg.jpeg")`}}></div>
+                <div className="col-xl-7 vh-100 align-items-center d-flex bg_white rounded-3 overflow-hidden">
                     <div className="card shadow-none border-0 ms-auto me-auto login-card">
                         <div className="card-body rounded-0 text-left">
-                            <h2 className="fw-700 display1-size display2-md-size mb-3">Login into <br />your account</h2>
+                            <h2 className="fw-700 display1-size display2-md-size mb-3">Login</h2>
                             <form>
                                 
                                 <div className="form-group icon-input mb-3">
@@ -48,10 +48,10 @@ function Login() {
                                 <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">Dont have account <a href="/register" className="fw-700 ms-1">Register</a></h6>
                             </div>
                             <div className="col-sm-12 p-0 text-center mt-2">
-                                
-                                <h6 className="mb-0 d-inline-block bg-white fw-500 font-xsss text-grey-500 mb-3">Or, Sign in with your social account </h6>
+{/*                                 
+                                <h6 className="mb-0 d-inline-block bg_white fw-500 font-xsss text-grey-500 mb-3">Or, Sign in with your social account </h6>
                                 <div className="form-group mb-1"><a href="/register" className="form-control text-left style2-input text-white fw-600 bg-facebook border-0 p-0 mb-2"><img src="assets/images/icon-1.png" alt="icon" className="ms-2 w40 mb-1 me-5" /> Sign in with Google</a></div>
-                                <div className="form-group mb-1"><a href="/register" className="form-control text-left style2-input text-white fw-600 bg-twiiter border-0 p-0 "><img src="assets/images/icon-3.png" alt="icon" className="ms-2 w40 mb-1 me-5" /> Sign in with Facebook</a></div>
+                                <div className="form-group mb-1"><a href="/register" className="form-control text-left style2-input text-white fw-600 bg-twiiter border-0 p-0 "><img src="assets/images/icon-3.png" alt="icon" className="ms-2 w40 mb-1 me-5" /> Sign in with Facebook</a></div> */}
                             </div>
                         </div>
                     </div> 

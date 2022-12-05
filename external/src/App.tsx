@@ -15,6 +15,7 @@ import Checkout from './pages/Store/Checkout/Checkout';
 import Profile from './pages/Profile/Profile';
 import SingleProduct from './pages/Store/SingleProduct/SingleProduct';
 import Products from './pages/Store/Products/Products';
+import NotFound from './pages/NotFound/NotFound';
 
 
 
@@ -28,7 +29,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='*' element={<NotFound />} />
+
+        <Route  path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -38,6 +41,10 @@ function App() {
 
         <Route path="/store" element={<Products/>} />
         <Route path="/product" element={<SingleProduct/>} />
+
+        <Route path="/product" element={<SingleProduct/>} />
+
+        {/* <Route  path="/notFound" element={<NotFound />} /> */}
       </Routes>
     </BrowserRouter>
   );
