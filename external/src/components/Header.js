@@ -21,7 +21,7 @@ class Header extends Component {
         const notiClass = `${this.state.isNoti ? " show" : ""}`;
 
         return (
-            <div className="nav-header bg-white shadow-xs border-0">
+            <div className="nav-header bg_white shadow-xs border-0">
                 <div className="nav-top">
                     <Link to="/"><i className="feather-zap text-success display2-size me-3 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">Sociala. </span> </Link>
                     <Link to="/defaultmessage" className="mob-menu ms-auto me-2 chat-active-btn"><i className="feather-message-circle text-grey-900 font-sm btn-round-md bg-greylight"></i></Link>
@@ -75,7 +75,7 @@ class Header extends Component {
                 <nav className={`navigation scroll-bar ${navClass}`}>
                     <div className="container ps-0 pe-0">
                         <div className="nav-content">
-                            <div className="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2 mt-2">
+                            <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2 mt-2">
                                 <div className="nav-caption fw-600 font-xssss text-grey-500"><span>New </span>Feeds</div>
                                 <ul className="mb-1 top-content">
                                     <li className="logo d-none d-xl-block d-lg-block"></li>
@@ -87,7 +87,7 @@ class Header extends Component {
                                 </ul>
                             </div>
 
-                            <div className="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2">
+                            <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2">
                                 <div className="nav-caption fw-600 font-xssss text-grey-500"><span>More </span>Pages</div>
                                 <ul className="mb-3">
                                     <li><Link to="/defaultemailbox" className="nav-content-bttn open-font"><i className="font-xl text-current feather-inbox me-3"></i><span>Email Box</span><span className="circle-count bg-warning mt-1">584</span></Link></li>
@@ -96,7 +96,7 @@ class Header extends Component {
                                     <li><Link to="/defaultlive" className="nav-content-bttn open-font"><i className="font-xl text-current feather-youtube me-3"></i><span>Live Stream</span></Link></li>                        
                                 </ul>
                             </div>
-                            <div className="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1">
+                            <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1">
                                 <div className="nav-caption fw-600 font-xssss text-grey-500"><span></span> Account</div>
                                 <ul className="mb-1">
                                     <li className="logo d-none d-xl-block d-lg-block"></li>

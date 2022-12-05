@@ -4,6 +4,7 @@ import Leftnav from '../../../components/Leftnav';
 import Rightchat from '../../../components/Rightchat';
 import Appfooter from '../../../components/Appfooter';
 import Popupchat from '../../../components/Popupchat';
+import { Link } from "react-router-dom";
 
 
 function Products() {
@@ -77,7 +78,7 @@ function Products() {
                 <Leftnav />
                 <Rightchat />
 
-                <div className="main-content bg-white right-chat-active">
+                <div className="main-content bg_white right-chat-active">
             
                     <div className="middle-sidebar-bottom">
                         <div className="middle-sidebar-left">
@@ -101,10 +102,16 @@ function Products() {
                                         <div key={index} className="col-lg-4 col-md-6" >
                                             <div className="card w-100 border-0 mt-4">
                                                 <div className="card-image w-100 p-0 text-center bg-greylight rounded-3 mb-2">
-                                                    <a href="/singleproduct"><img src={`assets/images/${value.imageUrl}`} alt="product" className="w-100 mt-0 mb-0 p-5" /></a>
+                                                    <Link to="/product">
+                                                        <img src={`assets/images/${value.imageUrl}`} alt="product" className="w-100 mt-0 mb-0 p-5" />
+                                                    </Link>
                                                 </div>
                                                 <div className="card-body w-100 p-0 text-center">
-                                                    <h2 className="mt-2 mb-1"><a href="/singleproduct" className="text-black fw-700 font-xsss lh-26">{value.name}</a></h2>
+                                                    <h2 className="mt-2 mb-1">
+                                                        <Link to="/product" className="text-black fw-700 font-xsss lh-26">
+                                                            {value.name}
+                                                        </Link>
+                                                    </h2>
                                                     <h6 className="font-xsss fw-600 text-grey-500 ls-2">${value.price}</h6>
                                                 </div>                                
                                             </div>

@@ -4,6 +4,7 @@ import Leftnav from '../../../components/Leftnav';
 import Rightchat from '../../../components/Rightchat';
 import Appfooter from '../../../components/Appfooter';
 import Popupchat from '../../../components/Popupchat';
+import { Link } from "react-router-dom";
 
 
 function Cart() {
@@ -13,7 +14,7 @@ function Cart() {
     <Leftnav />
     <Rightchat />
 
-    <div className="main-content right-chat-active bg-white">
+    <div className="main-content right-chat-active bg_white">
         <div className="middle-sidebar-bottom">
             <div className="middle-sidebar-left pe-0" >
                 <div className="row">
@@ -161,7 +162,7 @@ function Cart() {
                                     </div>
                                     
                                 </div>
-                                <a href="/cart" className="bg-dark float-right text-white fw-600 text-uppercase font-xsss border-dark border rounded-3 border-size-md d-inline-block w-100 p-3 text-center ls-3">Proceed To Checkout</a>
+                                <Link to="/checkout" className="bg-dark float-right text-white fw-600 text-uppercase font-xsss border-dark border rounded-3 border-size-md d-inline-block w-100 p-3 text-center ls-3">Proceed To Checkout</Link>
                             </div>
                         </div>
 
