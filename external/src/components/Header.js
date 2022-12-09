@@ -72,7 +72,7 @@ class Header extends Component {
                 <Darkbutton />
                 <Link to="/defaultsettings" className="p-0 ms-3 menu-icon"><img src="assets/images/user.png" alt="user" className="w40 mt--1" /></Link>
 
-                <nav className={`navigation scroll-bar ${navClass}`}>
+                <nav className={`navigation scroll-bar ${navClass}`} style={{paddingTop:'50px'}}>
                     <div className="container ps-0 pe-0">
                         <div className="nav-content">
                             <div className="nav-wrap bg_white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2 mt-2">
@@ -83,7 +83,7 @@ class Header extends Component {
                                     <li><Link to="/defaultbadge" className="nav-content-bttn open-font"><i className="feather-award btn-round-md bg-red-gradiant me-3"></i><span>Badges</span></Link></li>
                                     <li><Link to="/defaultstorie" className="nav-content-bttn open-font"><i className="feather-globe btn-round-md bg-gold-gradiant me-3"></i><span>Explore Stories</span></Link></li>
                                     <li><Link to="/defaultgroup" className="nav-content-bttn open-font"><i className="feather-zap btn-round-md bg-mini-gradiant me-3"></i><span>Popular Groups</span></Link></li>
-                                    <li><Link to="/userpage" className="nav-content-bttn open-font"><i className="feather-user btn-round-md bg-primary-gradiant me-3"></i><span>Author Profile </span></Link></li>                        
+                                    <li><Link to="/userpage" className="nav-content-bttn open-font"><i className="feather-user btn-round-md bg-primary me-3"></i><span>Author Profile </span></Link></li>                        
                                 </ul>
                             </div>
 

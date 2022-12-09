@@ -21,7 +21,7 @@ function Cart() {
                     <div className="col-xl-12 cart-wrapper mb-4">
                         <div className="row">
                             <div className="col-lg-12 mb-3">
-                                <div className="card p-md-5 p-4 bg-primary-gradiant rounded-3 shadow-xss bg-pattern border-0 overflow-hidden">
+                                <div className="card p-md-5 p-4 bg-primary rounded-3 shadow-xss bg-pattern border-0 overflow-hidden">
                                     <div className="bg-pattern-div"></div>
                                     <h2 className="display2-size display2-md-size fw-700 text-white mb-0 mt-0">Cart <span className="fw-700 ls-3 text-grey-200 font-xsssss mt-2 d-block">4 PRODUCT FOUND</span></h2>
                                 </div>
@@ -45,7 +45,7 @@ function Cart() {
                                         <tbody>
                                             <tr>
                                                 <td className="product-thumbnail text-left ps-0">
-                                                    <img src="https://via.placeholder.com/75x100.png" alt="Product Thumnail" className="w75 rounded-3" />
+                                                    <img src={`assets/images/product.png`}  alt="Product Thumnail" className="w75 rounded-3" />
                                                 </td>
                                                 <td className="product-headline text-left wide-column">
                                                     <h3>
@@ -71,7 +71,7 @@ function Cart() {
                                             </tr>
                                             <tr>
                                                 <td className="product-thumbnail text-left ps-0">
-                                                    <img src="https://via.placeholder.com/75x100.png" alt="Product Thumnail" className="w75 rounded-3" />
+                                                    <img src={`assets/images/product.png`}  alt="Product Thumnail" className="w75 rounded-3" />
                                                 </td>
                                                 <td className="product-headline text-left wide-column">
                                                     <h3>
@@ -97,7 +97,7 @@ function Cart() {
                                             </tr>
                                             <tr>
                                                 <td className="product-thumbnail text-left ps-0">
-                                                    <img src="https://via.placeholder.com/75x100.png" alt="Product Thumnail" className="w75 rounded-3" />
+                                                    <img src={`assets/images/product.png`}  alt="Product Thumnail" className="w75 rounded-3" />
                                                 </td>
                                                 <td className="product-headline text-left wide-column">
                                                     <h3>

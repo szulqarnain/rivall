@@ -16,15 +16,16 @@ import Profile from './pages/Profile/Profile';
 import SingleProduct from './pages/Store/SingleProduct/SingleProduct';
 import Products from './pages/Store/Products/Products';
 import NotFound from './pages/NotFound/NotFound';
+import VendorProfile from './pages/Store/VendorProfile';
 
 
 
 function App() {
 
-  const body = document.body
-  const darkTheme = "theme-dark"
+  // const body = document.body
+  // const darkTheme = "theme-dark"
 
-  body.classList.add(darkTheme)
+  // body.classList.add(darkTheme)
 
   return (
     <BrowserRouter>
@@ -43,6 +44,8 @@ function App() {
         <Route path="/product" element={<SingleProduct/>} />
 
         <Route path="/product" element={<SingleProduct/>} />
+
+        <Route path="/vendor-list" element={<VendorProfile/>} />
 
         {/* <Route  path="/notFound" element={<NotFound />} /> */}
       </Routes>

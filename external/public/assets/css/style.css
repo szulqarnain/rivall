@@ -279,7 +279,7 @@
   background-color: var(--theme-color-shade) !important;
 }
 
-.bg-primary-gradiant {
+.bg-primary {
   background: linear-gradient(135deg, var(--theme-color), var(--theme-color-shade)) !important;
 }
 
