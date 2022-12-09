@@ -26,7 +26,7 @@ function Header() {
     <div className="nav-header bg_white shadow-xs border-0 h-[60px]">
     <div className="nav-top px-4">
         
-        <Link to="/">
+        <Link to="/dashboard">
             {/* <i className="feather-zap text-success display2-size me-3 ms-0"></i> */}
             <span className="text-tPrimary d-inline-block fredoka-font ls-3 fw-600 font-xxl logo-text mb-0">Rivall</span> 
         </Link>
@@ -46,7 +46,9 @@ function Header() {
     </div>
     
 
-    {/* <NavLink to="/home" className="p-2 text-center ms-3 menu-icon center-menu-icon"><i className="feather-home font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
+    {/* <NavLink to="/home" className="p-2 text-center ms-3 menu-icon center-menu-icon">
+    <i className="feather-home font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i>
+    </NavLink> */}
     {/* <NavLink to="/defaultstorie" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-zap font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
     {/* <NavLink to="/defaultvideo" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-video font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
     {/* <NavLink to="/defaultgroup" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-user font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
@@ -90,18 +92,25 @@ function Header() {
                 <div className="nav-wrap mt-4 bg-white rounded-xxl shadow-xss pt-3 pb-1 mb-2" style={{background:'white'}}>
                             <div className="nav-caption fw-600 font-xssss box__heading text-tPrimary"><span> </span> Features</div>
                             <ul className="mb-3">
-                                <li><Link to="/vendor-list" className="nav-content-bttn open-font text-tBasic"><i className="font-md text-primary feather-shopping-cart me-3"></i><span>Store</span>
+  
+                                <li>
+                                    <Link to="/vendor-list" className="nav-content-bttn open-font text-tBasic">
+                                        <i className="font-md text-white feather-shopping-cart me-3 btn-round-md bg-red-gradiant "></i>
+                                        <span>Store</span>
                                 {/* <span className="circle-count bg-warning mt-1">584</span> */}
                                 </Link></li>    
        
-                                <li><Link to="/music" className="nav-content-bttn open-font text-tBasic"><i className="font-md text-primary feather-music me-3"></i><span>Music</span>
+                                <li><Link to="/music" className="nav-content-bttn open-font text-tBasic">
+                                    <i className="font-md text-white feather-music me-3  btn-round-md bg-gold-gradiant"></i><span>Music</span>
                                 {/* <span className="circle-count bg-warning mt-1">584</span> */}
                                 </Link></li>
-                                <li><Link to="/announcement" className="nav-content-bttn open-font text-tBasic"><i className="font-md text-primary feather-bell me-3"></i>
+                                <li><Link to="/announcement" className="nav-content-bttn open-font text-tBasic">
+                                    <i className="font-md text-white feather-bell me-3 btn-round-md bg-mini-gradiant"></i>
                                 <span>Announcement </span>
                                 {/* <span className="circle-count bg-warning mt-1">584</span> */}
                                 </Link></li>
-                                <li><Link to="/videos" className="nav-content-bttn open-font text-tBasic"><i className="font-md text-primary feather-youtube me-3"></i><span>Videos</span>
+                                <li><Link to="/videos" className="nav-content-bttn open-font text-tBasic">
+                                    <i className="font-md text-white feather-youtube me-3 btn-round-md bg-blue-gradiant"></i><span>Videos</span>
                                 {/* <span className="circle-count bg-warning mt-1">584</span> */}
                                 </Link></li>                     
                             </ul>
