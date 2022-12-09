@@ -52,10 +52,10 @@ function SingleProduct() {
                 <div className="middle-sidebar-left pe-0">
                     <div className="row">
                         <div className="col-lg-1 p-0 d-none d-lg-block">
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
-                            <img src="https://via.placeholder.com/385x300.png" alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src={`assets/images/product.png`} alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src={`assets/images/product.png`}  alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src={`assets/images/product.png`}  alt="product" className="mb-2 w-100 bg_white p-3" />
+                            <img src={`assets/images/product.png`}  alt="product" className="mb-2 w-100 bg_white p-3" />
                         </div>
                         <div className="col-lg-5 mb-4 shop-slider">
                             <Slider {...hotelsettings}>

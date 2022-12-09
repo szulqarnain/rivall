@@ -5,6 +5,7 @@ import Rightchat from '../../../components/Rightchat';
 import Appfooter from '../../../components/Appfooter';
 import Popupchat from '../../../components/Popupchat';
 import { Link } from "react-router-dom";
+import ProfilecardTwo from "../../../components/ProfilecardTwo";
 
 
 function Products() {
@@ -85,12 +86,14 @@ function Products() {
                             <div className="row">
                                 <div className="col-xl-12 col-xxl-12 col-lg-12">
                                     <div className="row">
-                                        <div className="col-lg-12">
-                                            <div className="card p-md-5 p-4 bg-primary-gradiant rounded-3 shadow-xss bg-pattern border-0 overflow-hidden">
+                                        {/* <div className="col-lg-12">
+                                            <div className="card p-md-5 p-4 bg-primary rounded-3 shadow-xss bg-pattern border-0 overflow-hidden">
                                                 <div className="bg-pattern-div"></div>
                                                 <h2 className="display2-size display2-md-size fw-700 text-white mb-0 mt-0">Shop <span className="fw-700 ls-3 text-grey-200 font-xsssss mt-2 d-block">32 PRODUCT FOUND</span></h2>
                                             </div>
-                                        </div>
+                                        </div> */}
+                                        
+                                    <ProfilecardTwo/>
                                     
                                         <div className="col-lg-12 mt-3">
                                             <h4 className="float-left font-xssss fw-700 text-grey-500 text-uppercase ls-3 mt-2 pt-1">32 Product found</h4>

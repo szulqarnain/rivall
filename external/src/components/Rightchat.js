@@ -120,7 +120,7 @@ class Rightchat extends Component {
                         <ul className="list-group list-group-flush">
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-primary-gradiant me-3 ls-3 text-white font-xssss fw-700">UD</span>
+                                <span className="btn-round-sm bg-primary me-3 ls-3 text-white font-xssss fw-700">UD</span>
                                 <h3 className="fw-700 mb-0 mt-0">
                                     <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Studio Express</span>
                                 </h3>
@@ -150,7 +150,7 @@ class Rightchat extends Component {
                         <ul className="list-group list-group-flush">
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-primary-gradiant me-3 ls-3 text-white font-xssss fw-700">AB</span>
+                                <span className="btn-round-sm bg-primary me-3 ls-3 text-white font-xssss fw-700">AB</span>
                                 <h3 className="fw-700 mb-0 mt-0">
                                     <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Armany Seary</span>
                                 </h3>

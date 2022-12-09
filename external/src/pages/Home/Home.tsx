@@ -231,12 +231,11 @@ function Home() {
                         <div className="col-lg-5 col-md-6 col-sm-8 py-4">
 
                             <h2 className="title-text mb-5 mt-5"><b>Set up your <span>Social</span> website with Rivall.</b></h2>
-                            <h4 className="d-inline-block">40 <span>Great <br /> Music</span></h4>
-                            <h4 className="d-inline-block">12 <span>Awesome <br /> Store</span></h4>
-                            <h4 className="d-inline-block">54 <span>Awesome <br /> Products</span></h4>
-                            <h4 className="d-inline-block">18 <span>Others <br />Groups</span></h4>
+                            <h4 className="d-inline-block">90M + <span>Great  Music</span></h4>
+                            <h4 className="d-inline-block">10M + <span>Awesome Videos</span></h4>
+                            <h4 className="d-inline-block">100K + <span>Latest Products</span></h4>
                             <div className="clearfix"></div>
-                            <Link to="/dashboard" className="btn btn-lg btn-primary mr-4 text-uppercase mt-5">Get Start</Link>
+                            <Link to="/dashboard" className="btn btn-lg btn-primary mr-4 text-uppercase mt-5">Get Start with rival </Link>
                             <div className="icon-scroll pos-bottom-center icon-white"></div>
                         </div>
 
@@ -252,7 +251,7 @@ function Home() {
 
         </div>
 
-        {/* <div className="section pb100 pt50 demo-style" id="feature">
+        <div className="section pb100 pt50 demo-style" id="feature">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
@@ -267,7 +266,7 @@ function Home() {
         </div>
 
 
-        <div className="section demo-style" id="mobile">
+        {/* <div className="section demo-style" id="mobile">
             <div className="container max-container">
                 <div className="col-lg-12 p-5 rounded-3 bscover" 
                 style={{backgroundImage: `url("assets/images/demo/mobile-banner-2.png")`}}>
@@ -312,7 +311,7 @@ function Home() {
                     ))}
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="p100 bg-black demo-style" id="contact">
             <div className="container">
@@ -325,7 +324,7 @@ function Home() {
                 </div>
             </div>
         </div>
-         */}
+        
     </div>
   )
 }
