@@ -203,9 +203,11 @@ function Home() {
             <div className="container max-container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6">
-                        <a href="/" className="logo">
-                            <img src={Logo} alt={``}/>
-                        </a>
+        
+                    <Link to="/">
+            {/* <i className="feather-zap text-success display2-size me-3 ms-0"></i> */}
+            <span className="text-tPrimary d-inline-block fredoka-font ls-3 fw-600 font-xxl logo-text mb-0">Rivall</span> 
+        </Link>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 d-none d-lg-block">
                         {/*                         
@@ -216,7 +218,7 @@ function Home() {
                         </ul> */}
                     </div>
                     <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6 text-right flex gap-2">
-                        <Link to="/login" className="btn btn-lg border-2 border-[#fff] text-uppercase text-white">Login</Link>
+                        <Link to="/login" className="btn btn-lg border-2  btn-primary  border-[#fff] text-uppercase text-white">Login</Link>
                         <Link to="/register" className="btn btn-lg btn-primary text-uppercase">Register</Link>
                     </div>
                 </div>
@@ -258,7 +260,7 @@ function Home() {
                         <img src="assets/images/demo/com-1.png" alt="com" className="img-fluid" />
                     </div>
                     <div className="col-lg-5 offset-lg-1">
-                        <h2 className="title-text2 mb-4 mt-5"><b>Awesome Components Ready Elements and Templates.</b></h2>				<p>Sociala powers thousands of apps at some of the smartest companies around the world. Be a part of professional community.</p>
+                        <h2 className="title-text2 mb-4 mt-5"><b>Awesome Social Media Platfoam for the users.</b></h2>				<p>Sociala powers thousands of apps at some of the smartest companies around the world. Be a part of professional community.</p>
                         <a href="#demo" className="btn btn-lg btn-primary mr-4 text-uppercase mt-4">Components</a>
                     </div>
                 </div>
