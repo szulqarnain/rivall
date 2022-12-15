@@ -7,7 +7,6 @@ import Rightchat from '../../components/Rightchat';
 import Appfooter from '../../components/Appfooter';
 import Popupchat from '../../components/Popupchat';
 
-
 import Friends from '../../components/Friends';
 import Contacts from '../../components/Contacts';
 import Group from '../../components/Group';
@@ -19,7 +18,6 @@ import Storyslider from '../../components/Storyslider';
 import Postview from '../../components/Postview';
 import Load from '../../components/Load';
 import Profilephoto from '../../components/Profilephoto';
-
 
 function Dashboard() {
   return (
