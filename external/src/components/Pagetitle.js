@@ -2,10 +2,10 @@ import React,{Component} from 'react';
 
 class Pagetitle extends Component {
     render() {
-        const {title} = this.props;
+        const {title,bg} = this.props;
         return (
-            <div className="card shadow-xss w-100 d-block d-flex border-0 p-4 mb-3">
-                <h2 className="fw-700 mb-0 mt-0 font-md text-grey-900 d-flex align-items-center">{title}
+            <div className={`card shadow-xss w-100 d-block d-flex border-0 p-4 mb-3 ${bg === 'transparent' ? 'bg-[#00000069]': 'bg-white'}`}>
+                <h2 className={`fw-700 mb-0 mt-0 font-md  d-flex align-items-center ${bg === 'transparent' ? 'text-white': 'text-grey-900'} `}>{title}
                 <form action="#" className="pt-0 pb-0 ms-auto">
                     <div className="search-form-2 ms-2">
                         <i className="ti-search font-xss"></i>

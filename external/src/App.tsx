@@ -17,6 +17,10 @@ import SingleProduct from './pages/Store/SingleProduct/SingleProduct';
 import Products from './pages/Store/Products/Products';
 import NotFound from './pages/NotFound/NotFound';
 import VendorProfile from './pages/Store/VendorProfile';
+import MusicList from './pages/Music/MusicList/MusicList';
+import MusicPlay from './pages/Music/MusicPlay/MusicPlay';
+import Announcements from './pages/Announcements/Announcements';
+import AnnoDetail from './pages/Announcements/Detail/AnnoDetail';
 
 
 
@@ -47,7 +51,14 @@ function App() {
 
         <Route path="/vendor-list" element={<VendorProfile/>} />
 
-        {/* <Route  path="/notFound" element={<NotFound />} /> */}
+        <Route path="/music-list" element={<MusicList/>} />
+
+        <Route path="/music-play" element={<MusicPlay/>} />
+
+        <Route path="/announcements" element={<Announcements/>} />
+        
+        <Route path="/announcements-detail" element={<AnnoDetail/>} />
+
       </Routes>
     </BrowserRouter>
   );
