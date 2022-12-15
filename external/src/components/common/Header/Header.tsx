@@ -97,22 +97,27 @@ function Header() {
                                     <Link to="/vendor-list" className="nav-content-bttn open-font text-tBasic">
                                         <i className="font-md text-white feather-shopping-cart me-3 btn-round-md bg-red-gradiant "></i>
                                         <span>Store</span>
-                                {/* <span className="circle-count bg-warning mt-1">584</span> */}
-                                </Link></li>    
-       
-                                <li><Link to="/music" className="nav-content-bttn open-font text-tBasic">
-                                    <i className="font-md text-white feather-music me-3  btn-round-md bg-gold-gradiant"></i><span>Music</span>
-                                {/* <span className="circle-count bg-warning mt-1">584</span> */}
-                                </Link></li>
-                                <li><Link to="/announcement" className="nav-content-bttn open-font text-tBasic">
-                                    <i className="font-md text-white feather-bell me-3 btn-round-md bg-mini-gradiant"></i>
-                                <span>Announcement </span>
-                                {/* <span className="circle-count bg-warning mt-1">584</span> */}
-                                </Link></li>
-                                <li><Link to="/videos" className="nav-content-bttn open-font text-tBasic">
-                                    <i className="font-md text-white feather-youtube me-3 btn-round-md bg-blue-gradiant"></i><span>Videos</span>
-                                {/* <span className="circle-count bg-warning mt-1">584</span> */}
-                                </Link></li>                     
+                                    </Link>
+                                </li>    
+                                <li>
+                                    <Link to="/music-list" className="nav-content-bttn open-font text-tBasic">
+                                        <i className="font-md text-white feather-music me-3  btn-round-md bg-gold-gradiant"></i>
+                                        <span>Music</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/announcements" className="nav-content-bttn open-font text-tBasic">
+                                        <i className="font-md text-white feather-bell me-3 btn-round-md bg-mini-gradiant"></i>
+                                        <span>Announcement </span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/videos" className="nav-content-bttn open-font text-tBasic">
+                                        <i className="font-md text-white feather-youtube me-3 btn-round-md bg-blue-gradiant"></i>
+                                        <span>Videos</span>
+                                    </Link>
+                                </li>    
+
                             </ul>
                 </div>
 

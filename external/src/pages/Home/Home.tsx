@@ -205,9 +205,9 @@ function Home() {
                     <div className="col-lg-3 col-md-6 col-sm-3 col-xs-6">
         
                     <Link to="/">
-            {/* <i className="feather-zap text-success display2-size me-3 ms-0"></i> */}
-            <span className="text-tPrimary d-inline-block fredoka-font ls-3 fw-600 font-xxl logo-text mb-0">Rivall</span> 
-        </Link>
+                         {/* <i className="feather-zap text-success display2-size me-3 ms-0"></i> */}
+                         <span className="text-tPrimary d-inline-block fredoka-font ls-3 fw-600 font-xxl logo-text mb-0">Rivall</span> 
+                     </Link>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 d-none d-lg-block">
                         {/*                         
