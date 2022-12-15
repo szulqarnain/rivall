@@ -64,7 +64,7 @@ class Announcements extends Component {
 
     render() {
         return (
-            <Fragment> 
+            <Fragment>
                 <Header />
                 <Leftnav />
                 <Rightchat />
