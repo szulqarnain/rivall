@@ -46,7 +46,7 @@ class Profilephoto extends Component {
         return (
             <div className="card w-100 shadow-xss rounded-xxl border-0 mb-3">
                 <div className="card-body d-flex align-items-center  p-4">
-                    <h4 className="fw-700 mb-0 font-xssss text-grey-900">Photos</h4>
+                    <h4 className="fw-700 mb-0 font-xssss text-grey-900">Anouncements Photos</h4>
                     <a href="/home" className="fw-600 ms-auto font-xssss text-primary">See all</a>
                 </div>
                 <div className="card-body d-block pt-0 pb-2">
@@ -74,7 +74,6 @@ class Profilephoto extends Component {
                                     <a href="#portfolio-details">
                                         <img src={`${value.bigImage}`} alt="Portfolio" className="img-fluid rounded-3 w-100"/>
                                     </a>
-                        
                                 </div>
                             
                             </div>

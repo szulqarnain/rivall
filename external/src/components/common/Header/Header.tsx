@@ -24,6 +24,7 @@ function Header() {
 
   return (
     <div className="nav-header bg_white shadow-xs border-0 h-[60px]">
+   
     <div className="nav-top px-4">
         
         <Link to="/dashboard">
@@ -44,7 +45,6 @@ function Header() {
         </form>
    
     </div>
-    
 
     {/* <NavLink to="/home" className="p-2 text-center ms-3 menu-icon center-menu-icon">
     <i className="feather-home font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i>
@@ -126,9 +126,9 @@ function Header() {
                     <ul className="mb-1">
                         <li className="logo d-none d-xl-block d-lg-block"></li>
                         <li><Link to="/profile" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-user me-3 text-primary"></i><span>My Profile</span></Link></li>
-                        <li><Link to="/defaultanalytics" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-pie-chart me-3 text-primary"></i><span>Analytics</span></Link></li>
-                        <li><Link to="/defaultsettings" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-shield me-3 text-primary"></i><span>Secuirty & Privacy</span></Link></li>
-                        <li><Link to="/defaultsettings" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-settings me-3 text-primary"></i><span>General Settings</span></Link></li>
+                        <li><Link to="/analytics" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-pie-chart me-3 text-primary"></i><span>Analytics</span></Link></li>
+                        <li><Link to="/security" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-shield me-3 text-primary"></i><span>Secuirty & Privacy</span></Link></li>
+                        <li><Link to="/general" className="nav-content-bttn open-font h-auto pt-2 pb-2 text-tBasic"><i className="font-sm feather-settings me-3 text-primary"></i><span>General Settings</span></Link></li>
                     </ul>
                 </div>
             </div>
