@@ -5,8 +5,19 @@ import Leftnav from '../../components/Leftnav';
 import Rightchat from '../../components/Rightchat';
 import Appfooter from '../../components/Appfooter';
 import Popupchat from '../../components/Popupchat';
-import { Link } from "react-router-dom";
 
+import Friends from '../../components/Friends';
+import Contacts from '../../components/Contacts';
+import Group from '../../components/Group';
+import Events from '../../components/Events';
+import Createpost from '../../components/Createpost';
+import Memberslider from '../../components/Memberslider';
+import Friendsilder from '../../components/Friendsilder';
+import Storyslider from '../../components/Storyslider';
+import Postview from '../../components/Postview';
+import Load from '../../components/Load';
+import Profilephoto from '../../components/Profilephoto';
+import Pagetitle from "../../components/Pagetitle";
 
 const eventList = [
     {
@@ -70,44 +81,37 @@ class Announcements extends Component {
                 <Rightchat />
 
                 <div className="main-content right-chat-active">
-                    <div className="middle-sidebar-bottom">
-                        <div className="middle-sidebar-left pe-0">
-                            <div className="row">
-
-                                {eventList.map((value , index) => (
-                                <div key={index} className="col-lg-4 col-md-6 pe-2 ps-2">
-                                    <div className="card p-3 bg__white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
-                                        <div className="card-image w-100">
-                                            <img src={`assets/images/${value.imageUrl}`} alt="event" className="w-100 rounded-3" />
-                                        </div>
-                                        <div className="card-body d-flex ps-0 pe-0 pb-0">
-                                            <div className="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 className="fw-700 font-lg ls-3 text-grey-900 mb-0"><span className="ls-3 d-block font-xsss text-grey-500 fw-500">{value.month}</span>{value.date}</h4></div>
-                                            <Link to='/announcements-detail' >
-                                                <h2 className="fw-700 lh-3 font-xss">{value.title}
-                                                    <span className="d-flex font-xssss fw-500 mt-2 lh-3 text-grey-500"> <i className="ti-location-pin me-1"></i>{value.location} </span>
-                                                </h2>
-                                           </Link>
-                                        </div>
-                                        <div className="card-body p-0">
-                                            <ul className="memberlist mt-4 mb-2 ms-0 d-inline-block">
-                                                <li><a href="/defaultevent"><img src="assets/images/user.png" alt="user" className="w30 d-inline-block" /></a></li>
-                                                <li><a href="/defaultevent"><img src="assets/images/user.png" alt="user" className="w30 d-inline-block" /></a></li>
-                                                <li><a href="/defaultevent"><img src="assets/images/user.png" alt="user" className="w30 d-inline-block" /></a></li>
-                                                <li><a href="/defaultevent"><img src="assets/images/user.png" alt="user" className="w30 d-inline-block" /></a></li>
-                                                <li className="last-member"><a href="/defaultevent" className="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a></li>
-                                            </ul>
-                                            <Link to='/announcements-detail' className="font-xsssss fw-700 ps-3 pe-3 lh-32 float-right mt-4 text-uppercase rounded-3 ls-2 bg-success d-inline-block text-white me-1">Read More  </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                ))}
-
-
+            
+            <div className="middle-sidebar-bottom">
+                <div className="middle-sidebar-left">
+                    <div className="row">
+                        <div className="col-sm-12">
+                             <div className="mt-[0px]">
+                                <Pagetitle title="Anouncements" bg='white'/>
                             </div>
+                        </div>
+                        <div className="col-xl-8 col-xxl-9 col-lg-8">
+
+                            {/* <Storyslider /> */}
+                            <Postview id="32" postvideo="" postimage="post.png" avater="user.png" user="Surfiya Zakir" time="22 min ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
+                            <Postview id="31" postvideo="" postimage="post.png" avater="user.png" user="David Goria" time="22 min ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
+                            <Postview id="33" postvideo="" postimage="post.png" avater="user.png" user="Anthony Daugloi" time="2 hour ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
+                            {/* <Memberslider /> */}
+                            <Postview id="35" postvideo="" postimage="post.png" avater="user.png" user="Victor Exrixon" time="3 hour ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
+                            <Friendsilder />
+                            <Postview id="36" postvideo="" postimage="post.png" avater="user.png" user="Victor Exrixon" time="12 hour ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
+                            <Load />
+                        </div>
+                        <div className="col-xl-4 col-xxl-3 col-lg-4 ps-lg-0">
+                            {/* <Friends />
+                            <Contacts />
+                            <Group /> */}
+                            <Profilephoto />
                         </div>
                     </div>
                 </div>
-
+            </div>
+        </div>
                 <Popupchat />
                 <Appfooter /> 
 

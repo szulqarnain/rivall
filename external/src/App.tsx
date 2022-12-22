@@ -21,6 +21,10 @@ import MusicList from './pages/Music/MusicList/MusicList';
 import MusicPlay from './pages/Music/MusicPlay/MusicPlay';
 import Announcements from './pages/Announcements/Announcements';
 import AnnoDetail from './pages/Announcements/Detail/AnnoDetail';
+import VideoList from './pages/Videos/VideosList/VideosList';
+import Analytics from './pages/Analytics/Analytics';
+import Security from './pages/Security/Security';
+import General from './pages/General/General';
 
 
 
@@ -58,6 +62,19 @@ function App() {
         <Route path="/announcements" element={<Announcements/>} />
         
         <Route path="/announcements-detail" element={<AnnoDetail/>} />
+
+
+        {/* Videos */}
+                
+        <Route path="/videos" element={<VideoList/>} />
+
+        <Route path="/analytics" element={<Analytics/>} />
+
+        <Route path="/security" element={<Security/>} />
+
+        <Route path="/general" element={<General/>} />
+
+        
 
       </Routes>
     </BrowserRouter>
