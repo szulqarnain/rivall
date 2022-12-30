@@ -71,8 +71,6 @@ class VideoList extends Component {
         return (
             <Fragment> 
                 <Header />
-                <Leftnav />
-                <Rightchat />
 
                 <div className="main-content right-chat-active">
                     <div className="middle-sidebar-bottom">

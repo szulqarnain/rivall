@@ -21,10 +21,10 @@ import MusicList from './pages/Music/MusicList/MusicList';
 import MusicPlay from './pages/Music/MusicPlay/MusicPlay';
 import Announcements from './pages/Announcements/Announcements';
 import AnnoDetail from './pages/Announcements/Detail/AnnoDetail';
-import VideoList from './pages/Videos/VideosList/VideosList';
 import Analytics from './pages/Analytics/Analytics';
 import Security from './pages/Security/Security';
 import General from './pages/General/General';
+import VideosN from './pages/VideosN/VideosN';
 
 
 
@@ -66,7 +66,7 @@ function App() {
 
         {/* Videos */}
                 
-        <Route path="/videos" element={<VideoList/>} />
+        <Route path="/videos" element={<VideosN/>} />
 
         <Route path="/analytics" element={<Analytics/>} />
 

@@ -1,0 +1,54 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    z-index: -9;
+    top: 0
+}
+
+#myVideo {
+    width: 100vw;
+    /* Could also use width: 100%; */
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    /* Change position to absolute if you don't want it to take up the whole page */
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.links {
+    display: flex;
+    background: transparent;
+}
+
+
+.links {
+    display: flex;
+    background: transparent;
+}
+
+.videos {
+    padding: 30px;
+    background: #141414;
+}
+
+.hero-sec {
+    height: 100vh !important;
+    align-items: center;
+}
+
+.flexbtn {
+    display: flex !important;
+    color: #141414;
+    background-color: white;
+}
+
+
+.effect {
+    background-color: #141414;
+    height: 100px;
+    width: 100%;
+    margin-top: -50px;
+    background: linear-gradient(transparent, #141414);
+}
