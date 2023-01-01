@@ -25,6 +25,8 @@ import Analytics from './pages/Analytics/Analytics';
 import Security from './pages/Security/Security';
 import General from './pages/General/General';
 import VideosN from './pages/VideosN/VideosN';
+import MusicS from './pages/MusicS/MusicS';
+import MusicCategory from './pages/MusicS/MusicCategory';
 
 
 
@@ -55,7 +57,7 @@ function App() {
 
         <Route path="/vendor-list" element={<VendorProfile/>} />
 
-        <Route path="/music-list" element={<MusicList/>} />
+        {/* <Route path="/music-list" element={<MusicList/>} /> */}
 
         <Route path="/music-play" element={<MusicPlay/>} />
 
@@ -74,8 +76,10 @@ function App() {
 
         <Route path="/general" element={<General/>} />
 
-        
-
+        {/* Music */}
+        <Route path="/music" element={<MusicS/>} />
+        <Route path="/music-list" element={<MusicCategory/>} />
+      
       </Routes>
     </BrowserRouter>
   );

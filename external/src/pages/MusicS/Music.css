@@ -1,0 +1,181 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    z-index: -9;
+    top: 0
+}
+
+#myVideo {
+    width: 100vw;
+    /* Could also use width: 100%; */
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    /* Change position to absolute if you don't want it to take up the whole page */
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.links {
+    display: flex;
+    background: transparent;
+}
+
+
+.links {
+    display: flex;
+    background: transparent;
+}
+
+.music {
+    padding-top: 70px;
+    background: #141414;
+    width: 80%;
+    margin-left: 25%;
+}
+
+
+.music__categories {
+    padding-top: 70px;
+    background: #141414;
+    width: 80%;
+    margin-left: 25%;
+}
+
+.hero-sec {
+    height: 100vh !important;
+    align-items: center;
+}
+
+.flexbtn {
+    display: flex !important;
+    color: #141414;
+    background-color: white;
+}
+
+
+.effect {
+    background-color: #141414;
+    height: 100px;
+    width: 100%;
+    margin-top: -50px;
+    background: linear-gradient(transparent, #141414);
+}
+
+
+.music__left {
+    height: 100vh;
+    width: 25%;
+    background-color: #0c0c0c;
+    position: fixed;
+    padding-top: 110px;
+}
+
+
+
+
+.Bwc9jlVb7HWs8JJupnBT {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -ms-flex-negative: 0;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    height: 24px;
+    justify-content: center;
+    padding: 4px;
+    position: relative;
+    width: 24px;
+
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+.Bwc9jlVb7HWs8JJupnBB {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -ms-flex-negative: 0;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    height: 24px;
+    justify-content: center;
+    padding: 4px;
+    position: relative;
+    width: 24px;
+}
+
+
+
+th {
+    border-color: #2f2f2f !important;
+}
+
+.actions__detail {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .music__left {
+        display: none;
+    }
+
+    .music {
+        margin-left: 0px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 100vh;
+        overflow: auto;
+        position: relative;
+        background-image: url(https://sheexploreslife.com/wp-content/uploads/2021/11/Sophia-Urista-cover-songs-when-women-do-it-better.jpg);
+        z-index: 1;
+    }
+
+    .music__categories {
+        margin-left: 0px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 100vh;
+        overflow: auto;
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+
+    .mob__hide {
+        display: none;
+    }
+
+    .trans__effect {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        overflow: auto;
+        background-color: rgb(0, 0, 0, 62%);
+    }
+
+    .nav-header {
+        background: transparent;
+    }
+
+    .actions__detail {
+        padding-top: 30px;
+        display: block;
+        padding-bottom: 0px;
+    }
+
+}
