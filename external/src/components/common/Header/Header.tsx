@@ -46,15 +46,6 @@ function Header() {
    
     </div>
 
-    {/* <NavLink to="/home" className="p-2 text-center ms-3 menu-icon center-menu-icon">
-    <i className="feather-home font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i>
-    </NavLink> */}
-    {/* <NavLink to="/defaultstorie" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-zap font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
-    {/* <NavLink to="/defaultvideo" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-video font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
-    {/* <NavLink to="/defaultgroup" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-user font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
-    {/* <NavLink to="/shop1" className="p-2 text-center ms-0 menu-icon center-menu-icon"><i className="feather-shopping-bag font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></NavLink> */}
-
-        
     <span className={`p-2 pointer text-center ms-auto menu-icon ${notiClass}`} id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false" onClick={toggleisNoti}><span className="dot-count bg-warning"></span><i className="feather-bell font-xl text-primary"></i></span>
     <div className={`dropdown-menu p-4 right-0 rounded-xxl border-0 shadow-lg ${notiClass}`} aria-labelledby="dropdownMenu3">
         <h4 className="fw-700 font-xss mb-4">Notification</h4>
@@ -100,7 +91,7 @@ function Header() {
                                     </Link>
                                 </li>    
                                 <li>
-                                    <Link to="/music-list" className="nav-content-bttn open-font text-tBasic">
+                                    <Link to="/music" className="nav-content-bttn open-font text-tBasic">
                                         <i className="font-md text-white feather-music me-3  btn-round-md bg-gold-gradiant"></i>
                                         <span>Music</span>
                                     </Link>
