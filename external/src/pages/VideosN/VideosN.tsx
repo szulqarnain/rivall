@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import VideoSlider from '../../components/VideoSlider'
 
 
 import './Videos.css'
+import VideoSlider from '../../components/VideoSlider'
 
 function VideosN() {
   return (

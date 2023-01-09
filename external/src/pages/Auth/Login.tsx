@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Logo from '../../images/logo.png'
 
-import './Auth.css'
-
 function Login() {
   return (
     <div className="main-wrap">

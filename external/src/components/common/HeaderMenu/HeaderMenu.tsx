@@ -14,7 +14,7 @@ function HeaderMenu() {
         <div className="links">
             <Link to="/login" className="header-btn d-none d-lg-block fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 ">Home</Link>
             <Link to="/videos" className="header-btn d-none d-lg-block fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 ">Cinema</Link>
-            <Link to="/music" className="header-btn d-none d-lg-block fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 ">Musics</Link>
+            <Link to="/music" className="header-btn d-none d-lg-block fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 ">Music</Link>
             <Link to="/vendor-list" className="header-btn d-none d-lg-block fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 ">Store</Link>
             <Link to="/announcements" className="header-btn d-none d-lg-block fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 ">Anouncements</Link>
         </div>

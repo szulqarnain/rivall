@@ -27,6 +27,7 @@ import General from './pages/General/General';
 import VideosN from './pages/VideosN/VideosN';
 import MusicS from './pages/MusicS/MusicS';
 import MusicCategory from './pages/MusicS/MusicCategory';
+import VideoDetail from './pages/VideoDetail/VideoDetail';
 
 
 
@@ -69,6 +70,7 @@ function App() {
         {/* Videos */}
                 
         <Route path="/videos" element={<VideosN/>} />
+        <Route path="/video-detail/:id" element={<VideoDetail/>} />
 
         <Route path="/analytics" element={<Analytics/>} />
 
@@ -78,7 +80,8 @@ function App() {
 
         {/* Music */}
         <Route path="/music" element={<MusicS/>} />
-        <Route path="/music-list" element={<MusicCategory/>} />
+        
+        <Route path="/music-list/:id" element={<MusicCategory/>} />
       
       </Routes>
     </BrowserRouter>

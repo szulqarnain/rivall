@@ -1,17 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HeaderMenu from '../../components/common/HeaderMenu/HeaderMenu'
 import MusicSlider from '../../components/MusicSlider'
 import LeftSide from './components/LeftSide/LeftSide'
 
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core';
 import AudioPlayer from 'material-ui-audio-player';
-import { Link } from 'react-router-dom';
-
+import { MusicData } from '../../config/musicData';
+import { Link, useParams } from 'react-router-dom';
 import './Music.css'
 
 const data:any = ['','','','','','','','','','','','','','','','','','','',''];
 
 function MusicCategory() {
+
+  const { id } = useParams()
+  
+  // const id = '1';
+  const [activeMusic , setActiveMusic] = useState({
+    id:'',
+    imageUrl: '',
+        songName: '',
+        email: '',
+        bgImage: '',
+        description: '',
+        likes: '',
+        views: '',
+        albumName:'',
+        artistId: '',
+        albumId: '',
+        artistName:'',
+  });
+
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+    let getMusic:any =  MusicData.find(value =>  value.id == id )
+    setActiveMusic(getMusic)
+  },[id])
 
     const muiTheme = createMuiTheme({});
 
@@ -84,7 +108,7 @@ function MusicCategory() {
                 {/* Left side */}
                 <LeftSide/>
                 
-                <div className="music">
+                <div className="music pl-[20px]">
 
                 <div className="trans__effect"></div>
 
@@ -92,13 +116,13 @@ function MusicCategory() {
                     <div className="cover pt-4">
                             <div className="flex">
                                 <div className="thumbnail mob__hide">
-                                    <img className="rounded-md w-[400px]" src="https://i.scdn.co/image/ab67616d00001e0212b7442d3b3eea9a482bcdcd" alt="" />
+                                    <img className="rounded-md w-[400px]" src={activeMusic.bgImage} alt="" />
                                 </div>
                                 <div className="detail pt-2 lg:pl-8">
                                     <h2 className='text-[#cecece]'>PLAYLIST</h2>
-                                    <h1 className='text-[#cecece] text-[40px] pt-3 pb-3 font-bold	'>Top Song - Global</h1>
-                                    <p className='text-[#aaa] mob__hide leading-[20px] text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aspernatur reiciendis fugiat! Error quasi blanditiis est architecto ipsam veniam sequi sed animi iste quos, commodi ab inventore autem, quisquam nam.</p>
-                                    <p className='text-[#cecece] pt-2'>Rivall . 823,132,1 Likes . 50 Songs</p>
+                                    <h1 className='text-[#cecece] text-[40px] pt-3 pb-3 font-bold	'>{activeMusic.songName}</h1>
+                                    <p className='text-[#aaa] mob__hide leading-[20px] text-[12px]'>{activeMusic.description}{activeMusic.description}{activeMusic.description}</p>
+                                    <p className='text-[#cecece] pt-2'>{activeMusic.artistName} . {activeMusic.views} Likes . {activeMusic.likes} </p>
                                 </div>
                             </div>
                     </div>
@@ -130,21 +154,23 @@ function MusicCategory() {
                                         <th className='mob__hide'>TIME</th>
                                     </tr>
                                 </thead>
-                                {data.map((item:any,index:any)=>{
+                                {MusicData.map((item:any,index:any)=>{
                                     return (
                                     <tr style={{borderBottom:'1px solid #2f2f2f'}}>
                                         <td>{index+1}</td>
                                         <td>
-                                            <div className="music_detail p-2 flex border-0">
-                                                <img className="h-[40px] rounded-md" src="https://i.scdn.co/image/ab67616d00001e0212b7442d3b3eea9a482bcdcd" alt="" />
+                                        <Link to={`/music-list/${item.id}`} className="music_detail p-2 flex border-0">
+                                            
+                                                <img className="h-[40px] rounded-md" src={item.bgImage} alt="" />
                                                 <div className='pl-2'>
-                                                    <h2 className='text-white'>All I want</h2>
-                                                    <p>Marry caryy</p>
+                                                    <h2 className='text-white'>{item.songName}</h2>
+                                                    <p>{item.artistName}</p>
                                                 </div>
-                                            </div>
+                                            
+                                          </Link>
                                         </td>
-                                        <td className='mob__hide'>123,342,12</td>
-                                        <td className='mob__hide'>123,342,12</td>
+                                        <td className='mob__hide'>{item.views}</td>
+                                        <td className='mob__hide'>{item.albumName}</td>
                                         <td className='mob__hide'>4:20</td>
                                     </tr>
                                     )

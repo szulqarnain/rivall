@@ -18,7 +18,7 @@ function MusicS() {
                 {/* Left side */}
                 <LeftSide/>
                 
-                <div className="music__categories">
+                <div className="music__categories pl-[20px]">
 
                     <MusicSlider title={'Love songs'}/>
 
