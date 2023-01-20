@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -28,10 +28,12 @@ import VideosN from './pages/VideosN/VideosN';
 import MusicS from './pages/MusicS/MusicS';
 import MusicCategory from './pages/MusicS/MusicCategory';
 import VideoDetail from './pages/VideoDetail/VideoDetail';
-
+import { useAuthContext } from './context/auth/context';
 
 
 function App() {
+  const { isLoggedIn } = useAuthContext();
+ 
 
   // const body = document.body
   // const darkTheme = "theme-dark"
@@ -40,13 +42,21 @@ function App() {
 
   return (
     <BrowserRouter>
+    {!isLoggedIn ?
       <Routes>
-        <Route path='*' element={<NotFound />} />
+        <Route path='*' element={<Login />} />
 
         <Route  path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        
+      
+      </Routes>
+      :
+      <Routes>
+         
+         <Route path="/" element={<Dashboard />} />
+         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkout" element={<Checkout/>} />
         <Route path="/profile" element={<Profile/>} />
@@ -82,8 +92,12 @@ function App() {
         <Route path="/music" element={<MusicS/>} />
         
         <Route path="/music-list/:id" element={<MusicCategory/>} />
-      
+        <Route path='*' element={<NotFound />} />
+        <Route path="/login" element={<Dashboard/>} />
+        <Route path="/register" element={<Dashboard/>} />
+
       </Routes>
+      }
     </BrowserRouter>
   );
 }
