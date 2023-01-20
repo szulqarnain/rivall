@@ -4,23 +4,28 @@ import { Link , NavLink } from 'react-router-dom';
 import DarkButton from '../DarkButton/DarkButton'
 
 import Logo from '../../../images/logo.png'
+import { useAuthContext } from '../../../context/auth/context';
 
 import './Header.css';
 
 function Header() {
+    const { userName, userId,userImage,setLogOut} = useAuthContext();
 
     const [isOpen,setIsOpen] = useState(false);
     const [isActive,setIsActive] = useState(false);
     const [isNoti,setIsNoti] = useState(false);
+    const [islog,setIsLog] = useState(false);
 
     const toggleOpen = () => setIsOpen(!isOpen);
     const toggleActive = () => setIsActive(!isActive);
     const toggleisNoti = () => setIsNoti(!isNoti);
+    const toggleisLog = () => setIsLog(!islog);
 
     const navClass = `${isOpen ? " nav-active" : ""}`;
     const buttonClass = `${isOpen ? " active" : ""}`;
     const searchClass = `${isActive ? " show" : ""}`;
     const notiClass = `${isNoti ? " show" : ""}`;
+    const logClass = `${islog ? " show" : ""}`;
 
   return (
     <div className="nav-header bg_white shadow-xs border-0 h-[60px]">
@@ -46,7 +51,9 @@ function Header() {
    
     </div>
 
-    <span className={`p-2 pointer text-center ms-auto menu-icon ${notiClass}`} id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false" onClick={toggleisNoti}><span className="dot-count bg-warning"></span><i className="feather-bell font-xl text-primary"></i></span>
+    <span className={`p-2 pointer text-center ms-auto menu-icon ${notiClass}`} id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false" onClick={toggleisNoti}>
+        <span className="dot-count bg-warning"></span>
+    <i className="feather-bell font-xl text-primary"></i></span>
     <div className={`dropdown-menu p-4 right-0 rounded-xxl border-0 shadow-lg ${notiClass}`} aria-labelledby="dropdownMenu3">
         <h4 className="fw-700 font-xss mb-4">Notification</h4>
         <div className="card bg-transparent-card w-100 border-0 ps-5 mb-3">
@@ -73,8 +80,17 @@ function Header() {
     </div>
     {/* <Link to="/defaultmessage" className="p-2 text-center ms-3 menu-icon chat-active-btn"><i className="feather-message-square font-xl text-current"></i></Link> */}
     {/* <DarkButton /> */}
-    <Link to="/defaultsettings" className="p-0 ms-3 menu-icon"><img src="assets/images/user.png" alt="user" className="w40 mt--1" /></Link>
 
+    <span className={`p-0 pointer  ms-2  menu-icon ${logClass}`} id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false" onClick={toggleisLog}>
+    <img src={userImage ? userImage : "assets/images/user.png"} alt="user" className="w40 mt--1 rounded-full" />
+    </span>
+
+    <div className={`dropdown-menu p-3 right-0 rounded-xxl border-0 shadow-lg ${logClass}`} aria-labelledby="dropdownMenu4">
+    <h4 className="fw-600 font-xss">{userName}</h4>
+        <button onClick={()=> setLogOut()}>
+        <h4 className="mt-6 fw-700 font-x ">Logout</h4>
+        </button>
+    </div>
     <nav className={`navigation scroll-bar ${navClass} pt-[50px]`}>
         <div className="container ps-0 pe-0">
             <div className="nav-content">
